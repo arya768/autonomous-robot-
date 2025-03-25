@@ -4,10 +4,10 @@ int motorB_direction = 4;
 int motoB_speed = 6;
 int servo_rotation = 10;
 int intrared_reciever = 3;
-int light_sensorleft = A0;
-int light_sensorright = A3;
+int light_sensorleft = A0;   
+int light_sensorright = A3; 
 int Obstacle_avoidanceleft = 1;
-int Obstacle_avoidanceright = A2;
+int Obstacle_avoidanceright = 2;
 int Line_trackingleft = 7;
 int Line_trackingright = 9;
 int ultrasonic_trigger = 12;
@@ -20,38 +20,23 @@ int ultrasonic_echi = 13;
 
 
 
+
+
+
 void setup(){
-  pinMode(motorA_direction, OUTPUT);  //
-
-
-
+  pinMode(motorA_direction, OUTPUT);
   pinMode(motoA_speed, OUTPUT);
-
-
   pinMode(motorB_direction, OUTPUT);
-
-
   pinMode(motoB_speed, OUTPUT);
-
   pinMode(servo_rotation, OUTPUT);
-
   pinMode(intrared_reciever, INPUT);
-
-  pinMode(light_sensorleft, INPUT);
-
-  pinMode(light_sensorright, INPUT);
-
-  pinMode(A1, INPUT);
-
   pinMode(A2, INPUT);
-
   pinMode(Line_trackingleft, INPUT);
-
   pinMode(Line_trackingright, INPUT);
-
   pinMode(ultrasonic_trigger, OUTPUT);
-
   pinMode(ultrasonic_echi, INPUT);
+  pinMode(A0, INPUT);
+  pinMode(A3, INPUT);
 }
 
 void loop() {
