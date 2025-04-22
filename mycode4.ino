@@ -1,3 +1,6 @@
+//light seeking sensor that stops once with obstacle
+
+
 #include <Servo.h>  // Include the Servo library
 
 // Pin definitions
